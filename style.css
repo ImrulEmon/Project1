@@ -7,4 +7,8 @@ h2{
     color:blue;}
 h3:hover{
     color: blue;
+    background-color: red;
+}
+#am:hover{
+    color:crimson;
 }
