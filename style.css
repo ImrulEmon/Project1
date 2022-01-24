@@ -1,8 +1,9 @@
 body{
     background-color: aqua;
+    counter-reset: num;
 }
 h1{
-    color:red;}
+    color:white;}
 h2{
     color:blue;}
 h3:hover{
@@ -24,4 +25,31 @@ li:nth-child(2n+1){
 li{
     font-size: 20px;
     color: white;
+}
+h1::before{
+    content: "Hello " ;
+    font-style: italic;
+    color:green;
+}
+p::before{
+    counter-increment: num;
+    content: "Words " counter(num)" : ";
+}
+.container{
+    background-color: green;
+}
+div{
+    height: 100px;
+    weight: 100px;
+}
+#one{
+    background-color: greenyellow;
+}
+#two{
+    background-color: honeydew;
+    position: relative;
+    left: 20px;
+}
+#three{
+    background-color: hotpink;
 }
